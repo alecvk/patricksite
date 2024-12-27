@@ -1,1 +1,399 @@
-# INPUT
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Personal website of Patrick Van Kerckhove">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patrick Van Kerckhove</title>
+
+  <!-- Google Fonts (Optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" 
+    rel="stylesheet"
+  >
+
+  <!-- All-in-one CSS -->
+  <style>
+    /* Basic CSS Reset & Typography */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fafafa;
+    }
+
+    /* Header, Nav, and Footer */
+    header {
+      background: #003262; /* UC Berkeley navy (example) */
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #FDB515; /* UC Berkeley gold for hover effect */
+    }
+
+    footer {
+      background: #E5E5E5;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .box-shadow {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: #fff;
+    }
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero p {
+      margin: 15px 0;
+      font-size: 1.1rem;
+      max-width: 600px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #003262;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      margin-top: 15px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #06213F; /* Slightly darker shade of navy */
+    }
+
+    /* Sections */
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .experience-item,
+    .leadership-item,
+    .activity-item {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: inside disc;
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+
+    .contact-info a {
+      color: #003262;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info a:hover {
+      color: #FDB515;
+    }
+
+    /* Fade-In Animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .appear {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive Example */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .hero {
+        padding: 40px 20px;
+      }
+      .btn {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="box-shadow">
+    <h1>Patrick Van Kerckhove</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#leadership">Leadership</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero fade-in">
+      <!-- Replace the 'src' with your actual image URL -->
+      <img src="https://via.placeholder.com/150" alt="Profile Image">
+      <h2>Hello, I’m Patrick!</h2>
+      <p>UC Berkeley Haas Student | Entrepreneur | Future Consultant & Investor</p>
+      <a href="#about" class="btn">Learn More</a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="fade-in">
+      <h2>About</h2>
+      <p>
+        I’m a Business Administration major (Haas) and Data Science minor at UC Berkeley. 
+        I have a deep passion for entrepreneurship, consulting, and investment banking, 
+        and I thrive on connecting with driven individuals to create impactful ventures.
+      </p>
+      <p>
+        I’m also fluent in French, hold dual US and Belgian citizenship, and enjoy 
+        exploring ways technology can streamline business growth.
+      </p>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="fade-in">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>UC Berkeley, Haas School of Business</strong><br>
+          Major: Business Administration | Minor: Data Science
+        </li>
+        <li><strong>Kehillah Jewish High School</strong><br>
+          GPA: 4.35 W, 3.97 UW | 11 AP or Honors classes
+        </li>
+        <li><strong>Additional Programs:</strong><br>
+          - Wharton High School Essentials of Finance (Philadelphia, PA)<br>
+          - Summer@INSEAD (Fontainebleau, France)<br>
+          - Blue Ocean Pitch Competition (Top 250 Finalist)
+        </li>
+      </ul>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="fade-in">
+      <h2>Work Experience</h2>
+
+      <div class="experience-item">
+        <h3>CryoX, Head of Marketing</h3>
+        <ul>
+          <li>Restructured brand image from B2C to B2B.</li>
+          <li>Collaborated on website UI/UX design with devs and designers.</li>
+          <li>Increased SEO CTR from ~3.5% to ~8%.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>StudyFetch, Head of Marketing (May 2023 - May 2024)</h3>
+        <ul>
+          <li>Scaled the platform from 1,500 to 750k+ users in 150+ countries.</li>
+          <li>Managed influencer team of 6; oversaw digital brand image.</li>
+          <li>Ran user testing campaigns aiding the shift from StudyfetchV1 → V2.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>ASKA eVTOL Drive & Fly Vehicle (July 2021 - August 2021)</h3>
+        <ul>
+          <li>Data entry/analysis for investor & media outreach (1,750+ individuals).</li>
+          <li>Front desk Q&A for prototype flying electric car; processed 5 preorders.</li>
+          <li>Assisted with McCalls Monterey Car Week show booth design & setup.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP & SERVICE SECTION -->
+    <section id="leadership" class="fade-in">
+      <h2>Leadership & Service</h2>
+
+      <div class="leadership-item">
+        <h3>AlphaG3N, Head of Marketing & Operations</h3>
+        <ul>
+          <li>Led moderator panel for AI/Web3 industry experts (live-streamed event).</li>
+          <li>Raised $12.5k from major Crypto/Web3 sponsors (Coinbase, Solana, etc.).</li>
+        </ul>
+      </div>
+
+      <div class="leadership-item">
+        <h3>Finology/YouthFi Founder (Non-Profit)</h3>
+        <ul>
+          <li>Developed financial literacy curriculum for students ages 9-14.</li>
+          <li>Taught 8 classes to 100+ students; social media content reached 15k+ views.</li>
+        </ul>
+      </div>
+
+      <div class="leadership-item">
+        <h3>Kehillah High School Leadership & Skills Development Class (Co-Founder)</h3>
+        <ul>
+          <li>Organized 10 guest speakers/business leaders; integrated into the official curriculum.</li>
+          <li>Topics included networking, product management, design thinking, etc.</li>
+        </ul>
+      </div>
+
+      <div class="leadership-item">
+        <h3>Kehillah Stock Club</h3>
+        <ul>
+          <li>President (2021-2024).</li>
+        </ul>
+      </div>
+
+      <div class="leadership-item">
+        <h3>Valley Water Youth Commissioner of Santa Clara County (2020-present)</h3>
+        <ul>
+          <li>Developed a drought awareness social media campaign.</li>
+          <li>Directed community outreach for a 50+ participant youth mentoring conference.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ACTIVITIES & SPORTS SECTION -->
+    <section id="activities" class="fade-in">
+      <h2>Activities & Sports</h2>
+
+      <div class="activity-item">
+        <h3>Squash</h3>
+        <ul>
+          <li>Nationally ranked (Boys Under 19, Top 215).</li>
+          <li>Team captain for Squash-on-Track fundraiser (~$1,500 raised).</li>
+          <li>Stanford Men’s Club practice invitee (2021/2022/2023).</li>
+        </ul>
+      </div>
+
+      <div class="activity-item">
+        <h3>Varsity Basketball, Kehillah Jewish High School</h3>
+        <ul>
+          <li>CA Central Coast Playoffs (‘22/’23)</li>
+          <li>Started playing in 2020, continuing through present.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <p class="contact-info">
+        <strong>Email:</strong> <a href="mailto:patrickevankerckhove@gmail.com">patrickevankerckhove@gmail.com</a><br>
+        <strong>Phone:</strong> <a href="tel:650-680-5850">650-680-5850</a><br>
+        <strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/patrick-van-kerckhove14" target="_blank">
+          linkedin.com/in/patrick-van-kerckhove14
+        </a>
+      </p>
+
+      <!-- Optional Contact Form -->
+      <!--
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+      -->
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="box-shadow">
+    <p>© 2024 Patrick Van Kerckhove. All rights reserved.</p>
+  </footer>
+
+  <!-- Optional: JavaScript for the fade-in on scroll -->
+  <script>
+    // Fade-in when the element is in viewport
+    const fadeInSections = document.querySelectorAll('.fade-in');
+
+    const options = {
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('appear');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    fadeInSections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
