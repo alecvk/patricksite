@@ -16,6 +16,11 @@
 
   <!-- All-in-one CSS -->
   <style>
+    /* Make all internal anchor links scroll smoothly */
+    html {
+      scroll-behavior: smooth;
+    }
+
     /* Basic CSS Reset & Typography */
     * {
       margin: 0;
@@ -39,8 +44,35 @@
       padding: 20px;
     }
 
+    header .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     header h1 {
-      margin-bottom: 10px;
+      margin-bottom: 0;
+      font-size: 1.8rem;
+    }
+
+    /* Larger LinkedIn Button in white */
+    .linkedin-link {
+      font-weight: 600;
+      text-decoration: none;
+      background-color: #ffffff; /* White background */
+      color: #003262;           /* UC Berkeley navy for text color */
+      padding: 12px 16px;       /* Larger padding for bigger button */
+      border-radius: 4px;
+      transition: background 0.3s ease, color 0.3s ease;
+      font-size: 1rem;          /* Slightly larger font size */
+    }
+
+    .linkedin-link:hover {
+      background-color: #eeeeee; /* Light gray on hover */
+    }
+
+    nav {
+      margin-top: 10px;
     }
 
     nav ul {
@@ -81,9 +113,10 @@
       background: #fff;
     }
 
+    /* Larger Photo */
     .hero img {
-      width: 150px;
-      height: 150px;
+      width: 200px;     
+      height: 200px;    
       border-radius: 50%;
       object-fit: cover;
       margin-bottom: 20px;
@@ -114,7 +147,7 @@
 
     /* Sections */
     section {
-      max-width: 800px;
+      max-width: 850px;
       margin: 40px auto;
       padding: 0 20px;
     }
@@ -161,9 +194,10 @@
 
     /* Responsive Example */
     @media (max-width: 768px) {
-      nav ul {
+      header .top-bar {
         flex-direction: column;
         align-items: flex-start;
+        gap: 10px;
       }
       .hero {
         padding: 40px 20px;
@@ -178,7 +212,17 @@
 
   <!-- HEADER & NAVIGATION -->
   <header class="box-shadow">
-    <h1>Patrick Van Kerckhove</h1>
+    <div class="top-bar">
+      <h1>Patrick Van Kerckhove</h1>
+      <!-- LinkedIn Link at the Top with White Background -->
+      <a 
+        class="linkedin-link" 
+        href="https://www.linkedin.com/in/patrick-van-kerckhove14"
+        target="_blank"
+      >
+        LinkedIn
+      </a>
+    </div>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -197,8 +241,8 @@
 
     <!-- HOME SECTION -->
     <section id="home" class="hero fade-in">
-      <!-- Replace the 'src' with your actual image URL -->
-      <img src="1718230134934.jpeg" alt="Profile Image">
+      <!-- Replace the 'src' with your actual image file name -->
+      <img src="1718230134934.jpeg" alt="Patrick's Headshot">
       <h2>Hello, I’m Patrick!</h2>
       <p>UC Berkeley Haas Student | Entrepreneur | Future Consultant & Investor</p>
       <a href="#about" class="btn">Learn More</a>
@@ -208,13 +252,29 @@
     <section id="about" class="fade-in">
       <h2>About</h2>
       <p>
-        I’m a Business Administration major (Haas) and Data Science minor at UC Berkeley. 
-        I have a deep passion for entrepreneurship, consulting, and investment banking, 
-        and I thrive on connecting with driven individuals to create impactful ventures.
+        I’m a Business Administration major (Haas) and Data Science minor at UC Berkeley with a deep passion 
+        for entrepreneurship, consulting, and investment banking. I thrive in dynamic environments where I 
+        can collaborate with driven individuals to build innovative solutions and push boundaries.
       </p>
       <p>
-        I’m also fluent in French, hold dual US and Belgian citizenship, and enjoy 
-        exploring ways technology can streamline business growth.
+        What fuels my energy? I believe in turning challenges into opportunities. My mindset is anchored in 
+        resilience, curiosity, and an unwavering determination to create positive change—whether I’m leading 
+        a marketing initiative, designing a new product strategy, or helping my peers excel through mentorship 
+        programs.
+      </p>
+      <p>
+        Born with dual US and Belgian citizenship, I’ve had the privilege to connect with people from diverse 
+        cultures and perspectives. Fluent in French, I’m always seeking new ways to bridge communication gaps 
+        and learn from global communities. My ultimate goal is to leverage technology and data-driven insights 
+        to catalyze sustainable growth—both economically and socially.
+      </p>
+      <p>
+        On the lighter side, I’m a firm believer that passion and fun should be part of every endeavor. Whether 
+        I’m analyzing financial models or playing a squash match, I bring a spirited drive to everything I do. 
+        That’s me in a nutshell—constantly exploring, learning, and innovating, with a heartfelt passion for 
+        making a meaningful difference.
+
+        Go Bears!! 
       </p>
     </section>
 
@@ -291,7 +351,7 @@
       <div class="leadership-item">
         <h3>Kehillah High School Leadership & Skills Development Class (Co-Founder)</h3>
         <ul>
-          <li>Organized 10 guest speakers/business leaders; integrated into the official curriculum.</li>
+          <li>Organized 10 guest speakers/business leaders; integrated into official curriculum.</li>
           <li>Topics included networking, product management, design thinking, etc.</li>
         </ul>
       </div>
@@ -328,7 +388,7 @@
       <div class="activity-item">
         <h3>Varsity Basketball, Kehillah Jewish High School</h3>
         <ul>
-          <li>CA Central Coast Playoffs (‘22/’23)</li>
+          <li>CA Central Coast Playoffs (‘22/’23).</li>
           <li>Started playing in 2020, continuing through present.</li>
         </ul>
       </div>
@@ -338,8 +398,10 @@
     <section id="contact" class="fade-in">
       <h2>Contact</h2>
       <p class="contact-info">
-        <strong>Email:</strong> <a href="mailto:patrickevankerckhove@gmail.com">patrickevankerckhove@gmail.com</a><br>
-        <strong>Phone:</strong> <a href="tel:650-680-5850">650-680-5850</a><br>
+        <strong>Email:</strong> 
+        <a href="mailto:patrickevankerckhove@gmail.com">patrickevankerckhove@gmail.com</a><br>
+        <strong>Phone:</strong> 
+        <a href="tel:650-680-5850">650-680-5850</a><br>
         <strong>LinkedIn:</strong> 
         <a href="https://www.linkedin.com/in/patrick-van-kerckhove14" target="_blank">
           linkedin.com/in/patrick-van-kerckhove14
